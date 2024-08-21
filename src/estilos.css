@@ -1,30 +1,31 @@
-/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kalam:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Reddit+Mono:wght@200..900&family=Sevillana&family=Shadows+Into+Light&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: "Kalam", cursive;
+    background: url(./background/Wallpaper\ ☘️\ Green.jpeg);
+    background-size: 400px;
+    color: #2f3e46;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
-/* Estilos para el contenedor principal */ 
-#app {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para el formulario */ 
+#app {
+    width: 400px;
+    background-color: #d8e2dc;
+    padding: 20px;
+    border-radius: 5px;
+    border: 5px solid #84a98c;
+}
+
 form {
     display: flex;
     justify-content: space-between;
 }
 
-/* Estilos al input*/ 
 input {
     width: 75%;
     padding: 8px;
@@ -32,24 +33,20 @@ input {
     border: 1px solid #ddd;
     border-radius: 3px;
 }
-
-/*Estilos al boton*/
-button {
+button{
     padding: 5px 8px;
-    background-color: #007bff;
+    background-color: #2f3e46;
     color: white;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    font-family: "Kalam", cursive;
 }
-
-/* Estilos para la lista */
 ul {
     list-style: none;
     padding: 0;
 }
 
-/* Estilos para el elemento de la lista*/
 li {
     background-color: #f4f4f4;
     padding: 10px;
@@ -59,9 +56,9 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-
-/*Estilos para el elemento completado de la lista*/
 li.completed {
     text-decoration: line-through;
     color: #888;
 }
+
+

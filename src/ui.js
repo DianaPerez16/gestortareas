@@ -1,3 +1,4 @@
+import confetti from 'canvas-confetti';
 import { getTasks} from './task'; 
 
 export const renderTasks = () => {
@@ -11,7 +12,12 @@ export const renderTasks = () => {
 
         //Añadir clase solo si la tarea está completada
         if(task.completed === true) {
-            li.classList.add("completed"); 
+            li.classList.add("completed");
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 },
+            }) 
         }
 
         li.innerHTML = `
